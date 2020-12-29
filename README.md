@@ -7,6 +7,6 @@ Program for real time conversion of your webcam video into ascii art.
 
 - [PySimpleGUI](https://pypi.org/project/PySimpleGUI/)
 - [Pillow](https://pypi.org/project/Pillow/)
-- [NunmPy](https://numpy.org/)
+- [NumPy](https://numpy.org/)
 - [OpenCV](https://pypi.org/project/opencv-python/)
 - [colour](https://pypi.org/project/colour/)
