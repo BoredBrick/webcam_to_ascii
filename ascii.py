@@ -5,7 +5,6 @@ from numpy import asarray
 from cv2 import cv2
 from colour import Color
 
-
 def image_to_ascii(image, intensity_correction, scale):
     WIDTH_ADJUST_RATIO = 7/4
     ascii_chars = ' .,:;irsXA253hMHGS#9B&@'
@@ -25,7 +24,6 @@ def image_to_ascii(image, intensity_correction, scale):
             lum = round(image[i][j])
             output += ascii_chars[lum % len(ascii_chars)]
     return output
-
 
 def new_layout(scale, font_size):
     layout = [[sg.Txt(size=(112*int(scale*10), 48*int(scale*10)),
@@ -50,13 +48,11 @@ def new_layout(scale, font_size):
                sg.Txt('Scale percentage', key='_SCALE_', size=(15, 1), pad=((105, 0), (0, 0)))]]
     return layout
 
-
 def new_window():
     window = sg.Window("Title", layout, location=(0, 0),
                        element_padding=(0, 0), return_keyboard_events=True,
                        keep_on_top=True, finalize=True, grab_anywhere=True, no_titlebar=True)
     return window
-
 
 def new_color_range(rainbow_speed):
     color_range1 = list(Color("red").range_to(Color("green"), 25 * rainbow_speed))
@@ -64,7 +60,6 @@ def new_color_range(rainbow_speed):
     color_range3 = list(Color("blue").range_to(Color("red"), 25 * rainbow_speed))
     color_range = color_range1 + color_range2 + color_range3
     return color_range
-
 
 cam = cv2.VideoCapture(0)
 rainbow_mode = False
