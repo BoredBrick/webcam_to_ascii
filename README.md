@@ -1,9 +1,9 @@
 # webcam_to_ascii
-Program for real time conversion of your webcam video into ascii art.
+### Program for real time conversion of your webcam video into ascii art.
 ![](pic.png)
 
 
-## Dependencies
+### Dependencies
 
 - [PySimpleGUI](https://pypi.org/project/PySimpleGUI/)
 - [Pillow](https://pypi.org/project/Pillow/)
