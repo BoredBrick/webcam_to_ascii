@@ -78,7 +78,7 @@ def new_layout(scale, font_size, color):
 def new_window():
     window = sg.Window("Title", layout, location=(0, 0),
                        element_padding=(0, 0), return_keyboard_events=True,
-                       keep_on_top=False, finalize=True,  no_titlebar=True)
+                       keep_on_top=True, finalize=True,  no_titlebar=True)
     return window
 
 
