@@ -1,6 +1,6 @@
 # webcam_to_ascii
 Program for real time conversion of your webcam video into ascii art.
-![](picture.png)
+![](pic.png)
 
 
 ## Dependencies
