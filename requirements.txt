@@ -1,0 +1,5 @@
+PySimpleGUI >= 4.33.0
+Pillow
+numpy
+opencv-python
+colour
